@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global styles */
+        body {
+            background-color: hsl(0, 0%, 7%); /* Light gray background */
+            font-family: 'Arial', sans-serif;
+            margin: 10px; /* Added padding to all sides of the page */
+            padding: 10px; /* Added padding to all sides of the page */
+        }
+
+        /* Button styles */
+        .rounded-button {
+            padding: 10px 20px;
+            background-color: hsl(0, 0%, 7%) ; /* Blue background color */
+            color: white; /* White text color */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 10px;
+        }
+
+        /* Hover effect */
+        .rounded-button:hover {
+            background-color: #2f2f30; /* Darker blue on hover */
+        }
+        .back-button {
+            padding: 10px 20px;
+            background-color: hsl(0, 0%, 7%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        /* Project container styles */
+        .project-container {
+            background-color: hsl(240, 2%, 12%);
+            padding: 50px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Project title styles */
+        .project-title {
+            color: hsl(45, 100%, 72%); /* Light blue text color for h2 */
+            text-align: center;
+            font-weight: bold; /* Bold font weight */
+        }
+
+        /* Project content styles */
+        .project-content {
+            color: #cfcbcb; /* Medium gray text color */
+            text-align: left;
+            border: 1px solid #575757; /* Border color for the boxes */
+            border-radius: 10px; /* Rounded corners for the boxes */
+            padding: 15px; /* Padding inside the boxes */
+            margin-bottom: 20px; /* Spacing between boxes */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">HOME</a>
+    <div class="project-container" style="background-color: hsl(240, 2%, 12%);"> <!-- Blue project container -->
+        <button class="rounded-button">
+            LIBRARY MANAGEMENT SYSTEM:</button>
+        <div class="project-content">
+            <h2 class="project-title"><b>ABSTRACT</b></h2>
+            <p>The Central Addressing System project was primarily developed as a sophisticated control system, featuring an administrative interface and multiple user profiles. The administrator holds the authority to add numerous users and seamlessly integrate books into the database by scanning QR codes affixed to each book.Within this system, users, particularly students, have the capability to peruse the entire library catalog. In collaboration with the administrator, they can efficiently initiate book transactions, including issuing and returning books. Notably, the user interface provides visibility into both the issue and return dates for each transaction, enhancing transparency and accountability.<br><br>This project leverages a technology stack encompassing Python for backend functionality, MongoDB for database management, and a frontend developed using HTML, CSS, and JavaScript. The synergistic integration of these technologies culminates in a highly effective and user-friendly library management system, significantly reducing the need for manual intervention.</p>
+            <h2 class="project-title">WORKING MODEL</h2>
+            <p>The components employed in this project consist of a <b>Raspberry Pi 3 Model B</b>, serving as the dedicated server for hosting the website. Additionally, a <b>mobile phone or laptop camera</b> functions as a high-performance QR code scanner, facilitating seamless interaction with the system. This configuration ensures optimal performance and a sophisticated user experience.</p>
+            <h2 class="project-title">OUTCOMES</h2>
+            <p>The final outcomes of this project include an automated and streamlined library management process, enhanced user experience, and a robust system for tracking book transactions. The utilization of QR codes for book identification further contributes to the efficiency and accuracy of the system.</p>
+        </div>
+    </div>
+
+    <div class="project-container" style="background-color: hsl(240, 2%, 12%);"> <!-- Green project container -->
+        <button class="rounded-button">CENTRAL ADDRESSING SYSTEM:</button>
+        <div class="project-content">
+            <h2 class="project-title">ABSTRACT</h2>
+            <p>This project introduces an advanced classroom management system employing a Raspberry Pi as the server, NodeMCU as the client, and integrated audio and video systems. The system incorporates a web interface with dual profiles—one for administrators and another for users. Teachers can select specific classrooms, choose the media type (audio, video, or text), and seamlessly transmit relevant data. Students, equipped with user profiles, can access and interact with the transmitted content. This innovative solution enhances classroom communication, creating an efficient and interactive educational environment.</p>
+            <h2 class="project-title">WORKING MODEL</h2>
+            <p>The working model of this project revolves around the symbiotic relationship between the Raspberry Pi, acting as the server and hosting the website, and NodeMCU devices, which include both NodeMCU acting as a client for two-way communication with the Raspberry Pi and an ESP8266 NodeMCU establishing connections with other physical devices.<ol><li><b>Raspberry Pi Server and Website Hosting:</b></li></ol>The Raspberry Pi serves as the central server hosting the project's web interface. The website is a comprehensive platform that facilitates interactions between administrators (teachers) and users (students).<li><b> Two-way Communication via Web Sockets:</b></li>The communication between the Raspberry Pi and NodeMCU devices is achieved through bi-directional web sockets. This two-way communication ensures real-time data exchange, allowing administrators and users to interact seamlessly with the system.<li><b>NodeMCU as a Client:</b></li>NodeMCU devices act as clients, establishing a dynamic and responsive connection with the Raspberry Pi server. This connection enables the transmission of instructions and data from the server to the NodeMCU devices, facilitating effective control over the physical devices in the classroom.<li><b>ESP8266 NodeMCU Connection with Physical Devices:</b></li> The ESP8266 NodeMCU establishes connections with other physical devices in the classroom, such as audio and video systems. This connectivity enables the transmission of data from the server to these devices, ensuring synchronized delivery of educational content.<li><b>Interactivity and Control:</b></li>Teachers, through the web interface hosted on the Raspberry Pi, can select specific classrooms and media types. The instructions are then transmitted via web sockets to the NodeMCU devices, which, in turn, relay the information to the ESP8266 NodeMCU, initiating interaction with the corresponding physical devices.<li><b>Efficient Data Transmission:</b></li>The use of web sockets facilitates efficient and low-latency data transmission between the Raspberry Pi server and NodeMCU devices, ensuring timely delivery of content and instructions.</p>
+            <h2 class="project-title">OUTCOMES</h2>
+            <p>The culmination of this project yields a cutting-edge classroom management system, where a Raspberry Pi serves as the central server hosting a user-friendly web interface. Employing two-way communication via web sockets, administrators can seamlessly control and transmit various media types to specific classrooms. NodeMCU devices, functioning as clients, establish dynamic connections with the server, while ESP8266 NodeMCU ensures efficient communication with physical devices in the classroom, such as audio and video systems. The outcomes include real-time interaction, enhanced user experiences, optimized resource utilization, and adaptability to evolving educational needs. This innovative solution not only streamlines classroom control but also fosters a dynamic and interactive learning environment, showcasing technological innovation in education.</p>
+        </div>
+    </div>
+
+    <div class="project-container" style="background-color: hsl(240, 2%, 12%);"> <!-- Red project container -->
+        <button class="rounded-button">ROBOTIC CAR, CONTROLLED BY INTERRUPTS:</button>
+        <div class="project-content">
+            <h2 class="project-title">ABSTRACT</h2>
+            <p>This project introduces a sophisticated robotic car equipped with comprehensive features for motion control, accident prevention through ultrasonic sensors, Bluetooth connectivity, and an interrupt control system. The embedded system, driven by NodeMCU and programmed in Embedded C, forms the core of this intelligent vehicle. The integration of ultrasonic sensors ensures accident avoidance by providing real-time obstacle detection. Bluetooth capabilities enable remote control through a dedicated mobile app. The incorporation of an interrupt control system enhances responsiveness. This project represents a convergence of hardware and software technologies, showcasing a versatile robotic car designed for efficiency, safety, and user-friendly control.</p>
+            <h2 class="project-title">WORKING MODEL</h2>
+            <p>The working model of the robotic car involves a multi-faceted approach to control and maneuverability. The embedded system, powered by NodeMCU and programmed in Embedded C, governs the vehicle's functions. Ultrasonic sensors continuously scan the surroundings, providing real-time data to prevent collisions. Bluetooth connectivity allows users to control the robotic car remotely via a dedicated mobile app. The interrupt control system ensures rapid response to external stimuli, enhancing the vehicle's agility. The combination of these elements creates a seamless and dynamic robotic car experience, blending precise control, accident prevention, and user-friendly operation.</p>
+            <h2 class="project-title">OUTCOMES</h2>
+            <p>The final outcome of this project is a state-of-the-art robotic car that excels in various aspects of control, safety, and user interaction. The integration of ultrasonic sensors contributes to accident prevention by detecting obstacles and autonomously adjusting the car's path. Bluetooth connectivity extends user control beyond physical proximity, allowing for convenient remote operation through a specialized mobile app. The interrupt control system enhances the car's responsiveness, making it adept at swiftly adapting to changing environments. This project not only demonstrates the capabilities of embedded systems and sensor technology but also provides a tangible and versatile solution for intelligent robotic vehicles, showcasing advancements in both hardware and software for the field of robotics.</p>
+        </div>
+    </div>
+
+</body>
+</html>
